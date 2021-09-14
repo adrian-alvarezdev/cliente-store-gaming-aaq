@@ -1,0 +1,16 @@
+.basic-layout {
+  min-height: 100vh;
+  background-image: url("https://parches-ecommerce.s3.us-east-2.amazonaws.com/static/bg-web.jpeg");
+  background-size: cover;
+  background-position: center;
+  .content {
+    background: $background-greylight;
+    height: calc(100vh - 130px);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    overflow: scroll;
+
+    &::webkit-scrollbar {
+        display: none;
+    }
+  }
+}

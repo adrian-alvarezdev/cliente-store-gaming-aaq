@@ -1,0 +1,57 @@
+.top-bar {
+  height: 90px;
+  background-color: $background-dark;
+  .ui.grid {
+    margin: 0;
+    padding: 0;
+    .column {
+      padding: 0;
+    }
+  }
+  &__left {
+    display: flex !important;
+    align-items: center;
+    img {
+      height: 50px;
+      transition: all 0.5s;
+    }
+    &:hover {
+      transform: translateX(-15px);
+    }
+  }
+
+  &__right {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .ui.icon.input > input{
+      padding-right: 5px !important;
+
+  }
+  .ui.input {
+    align-items: center;
+    margin-right:25px;
+  }
+  input {
+    background-color: transparent !important;
+    border: 0 !important;
+    border-bottom: 2px solid $primary !important;
+    color: $font-light !important;
+    padding: 5px 0;
+    width: 220px;
+    font-size: 20px;
+    transition: width 0.7s;
+
+    &:focus {
+      width: 350px;
+    }
+    
+  }
+  i{
+    color: white;
+    opacity: 1 !important;
+    font-size: 25px !important;
+    right: -50px !important;    
+}
+}
